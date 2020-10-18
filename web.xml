@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <welcome-file-list>
+        <welcome-file>Login-form.jsp</welcome-file>
+    </welcome-file-list>
+    <context-param>
+        <param-name>path</param-name>
+        <param-value>"C:\Users\Abylay\Assignment_3\src\main\webapp"</param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>Classes.LoginServlet</servlet-class>
+        <init-param>
+            <param-name>ServletName</param-name>
+            <param-value>Login</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegServlet</servlet-name>
+        <servlet-class>Classes.RegServlet</servlet-class>
+        <init-param>
+            <param-name>ServletName</param-name>
+            <param-value>Registration</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegServlet</servlet-name>
+        <url-pattern>/Registration</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>Classes.LogoutServlet</servlet-class>
+        <init-param>
+            <param-name>ServletName</param-name>
+            <param-value>Logout</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowServlet</servlet-name>
+        <servlet-class>Classes.ShowServlet</servlet-class>
+        <init-param>
+            <param-name>ServletName</param-name>
+            <param-value>Show</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowServlet</servlet-name>
+        <url-pattern>/Show</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Sport</servlet-name>
+        <servlet-class>Item.Sport</servlet-class>
+        <init-param>
+            <param-name>ServletName</param-name>
+            <param-value>Sport</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Sport</servlet-name>
+        <url-pattern>/Sport</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Clothes</servlet-name>
+        <servlet-class>Item.Clothes</servlet-class>
+        <init-param>
+            <param-name>ServletName</param-name>
+            <param-value>Clothes</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Clothes</servlet-name>
+        <url-pattern>/Clothes</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Furniture</servlet-name>
+        <servlet-class>Item.Furniture</servlet-class>
+        <init-param>
+            <param-name>ServletName</param-name>
+            <param-value>Furniture</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Furniture</servlet-name>
+        <url-pattern>/Furniture</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Gadgets</servlet-name>
+        <servlet-class>Item.Gadgets</servlet-class>
+        <init-param>
+            <param-name>ServletName</param-name>
+            <param-value>Gadgets</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Gadgets</servlet-name>
+        <url-pattern>/Gadgets</url-pattern>
+    </servlet-mapping>
+</web-app>
